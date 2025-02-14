@@ -1,0 +1,25 @@
+.footer{
+    background-color: black;
+    height: 800%;
+   
+} 
+.logo{
+    display: flex;
+    justify-content:center;
+    
+
+    
+}
+.logo > a>img{
+    width: 50px;
+    margin: 40px 40px 0px 40px;
+    
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color:wheat;
+}
+
+
