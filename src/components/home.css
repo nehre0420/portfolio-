@@ -1,0 +1,126 @@
+PortfolioHome.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero {
+    max-width: 600px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .projects {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 600px) {
+    .title {
+      font-size: 30px;
+    }
+  
+    .description {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .project-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding: 50px;
+    }
+  
+    .hero {
+      max-width: 700px;
+    }
+  
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .project-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
